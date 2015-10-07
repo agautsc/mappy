@@ -32,10 +32,10 @@
 
       function showInfo(data) {
         // the column headers of the info you want in your popup
-        var optionsJSON = ["Author", "IMG-URL"]
+        var optionsJSON = ["Author", "img-url", "Link"]
         // an html template for your popup
-        var template = "<ul><li><a href='{{IMG-URL}}' target='_blank'>"
-                     + "<img src='{{IMG-URL}}'></a></li>"
+        var template = "<ul><li><a href='{{Link}}' target='_blank'>"
+                     + "<img src='{{img-url}}'></a></li>"
                      + "<li><h4>{{Author}}</h4></li></ul>"
         var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
         var map = Sheetsee.loadMap("map")
